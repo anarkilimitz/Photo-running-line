@@ -1,0 +1,38 @@
+    /* Основные стили */
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #f0f0f0;
+    }
+
+    .scrolling-container {
+      margin-top: 80px;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .scrolling-wrapper {
+      display: inline-block;
+      animation: scroll 20s linear infinite;
+    }
+
+    .scrolling-wrapper img {
+      height: 150px;
+      margin: 0 10px;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius:10px;
+    }
+
+    /* Анимация для бегущей строки */
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
